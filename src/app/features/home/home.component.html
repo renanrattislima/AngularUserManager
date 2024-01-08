@@ -1,0 +1,38 @@
+<div class="header">
+  <div class="container-header">
+    <h1>Cadastro de Usuários</h1>
+    <div>
+      <button (click)="clickAddUser(data)" type="button" class="btn btnAdd">Adicionar usuário</button>
+    </div>
+  </div>
+</div>
+
+<table width="100%" cellpadding="5" class="table" >
+  <thead>
+    <tr>
+      <th>ID do Usuário</th>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>Data de Nascimento</th>
+      <th>Renda Mensal</th>
+      <th>E-mail</th>
+      <th>Data de Cadastro</th>
+      <th>Detalhes</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr *ngFor="let data of data">
+        <td>{{ data.id }}</td>
+        <td>{{ data.nome }}</td>
+        <td>{{ data.cpf }}</td>
+        <td>{{ data.dataNascimento }}</td>
+        <td>{{ data.renda }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.dataCadastro }}</td>
+        <td>
+          <button (click)="editUser(data)" class="btn btnEdit" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
+          <button (click)="deleteUser(data)" class="btn btnDelete">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+</table>

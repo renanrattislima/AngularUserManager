@@ -1,0 +1,101 @@
+.header {    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #005034;
+
+    .container-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #005034;
+        width: 100%;
+        padding: 10px;
+
+        h1 {
+            color: #fff;
+            font-size: 32px;
+        }
+    }
+}
+
+table {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+    font-family: Verdana;
+    border-collapse: collapse;
+
+    td, th {
+        font-size: 14px;     
+        padding: 10px;   
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #ddd;
+      }
+}
+.btn {
+    padding: 4px 16px;
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.btnAdd {
+    background-color: #29754d;
+
+    &:hover {
+        background-color: #4ab77e;
+    }
+}
+.btnEdit {
+    background-color: #0000ff;
+
+    &:hover {
+        background-color: #3e3efb;
+    }
+}
+.btnEdit {
+    background-color: #0000ff;
+
+    &:hover {
+        background-color: #3e3efb;
+    }
+}
+.btnDelete {
+    background-color: #c22033;
+    &:hover {
+        background-color: #fd2c44;
+    }
+}
+.btnUpdate {
+    background-color: orangered;
+
+    &:hover {
+        background-color: #cc3a04;
+    }
+}
+.btnClose {
+    background-color: #808080;
+
+    &:hover {
+        background-color: #676666;
+    }
+}
+.btnDelete {
+    background-color: #c22033;
+    &:hover {
+        background-color: #fd2c44;
+    }
+}

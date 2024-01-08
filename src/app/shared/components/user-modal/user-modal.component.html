@@ -1,0 +1,39 @@
+<!-- Modal -->
+<div class="user-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Informações do usuário</h5>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" formControlName="nome" class="form-control">              
+            </div>
+            <div class="mb-3">
+              <label class="form-label">CPF</label>
+              <input  type="text" formControlName="cpf"  class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Data de Nascimento</label>
+              <input type="text" formControlName="dataNascimento" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Renda Mensal</label>
+              <input type="text" formControlName="renda" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">E-mail</label>
+              <textarea type="text" formControlName="email" class="form-control"></textarea>
+            </div>            
+          </form>
+        </div>
+        <div class="user-modal-footer">
+          <button type="button" id="cancelar" (click)="goBackHandler()" class="btn btnClose" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" *ngIf="btnAdd"  (click)="postUserDetails()" class="btn btnAdd">Adicionar</button>
+          <button type="button" *ngIf="btnUpdate" (click)="updateUserDetails()" class="btn btnUpdate">Atualizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
